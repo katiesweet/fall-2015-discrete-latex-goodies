@@ -1,34 +1,33 @@
-	\begin{align*}
-		A(x) &= \sum_{n\ge 0} L_n x^n\\
-		L_n &= L_{n-1} + L_{n-2} +2[n=0] - [n=1], \text{ for } n\ge 0\\
-		\sum_{n\ge 0} L_n x^n &= \sum_{n\ge 0} L_{n-1} x^n + \sum_{n\ge 0} L_{n-2} x^n + \sum_{n\ge 0} 2[n=0] x^n - \sum_{n\ge 0} [n=1] x^n\\
-		\sum_{n\ge 0} L_n x^n &= x \sum_{n\ge 0} L_{n-1} x^{n-1} + x^2 \sum_{n\ge 0} L_{n-2} x^{n-2}+ 2 x^0 - x^1\\
-		A(x) &= xA(x) + x^2A(x) + 2 - x\\
-		A(x) &= \frac{2-x}{1-x-x^2}
+\begin{align*}
+	A(x) &= \sum_{n\ge 0} L_n x^n\\
+	L_n &= L_{n-1} + L_{n-2} +2[n=0] - [n=1], \text{ for } n\ge 0\\
+	\sum_{n\ge 0} L_n x^n &= \sum_{n\ge 0} L_{n-1} x^n + \sum_{n\ge 0} L_{n-2} x^n + \sum_{n\ge 0} 2[n=0] x^n - \sum_{n\ge 0} [n=1] x^n\\
+	\sum_{n\ge 0} L_n x^n &= x \sum_{n\ge 0} L_{n-1} x^{n-1} + x^2 \sum_{n\ge 0} L_{n-2} x^{n-2}+ 2 x^0 - x^1\\
+	A(x) &= xA(x) + x^2A(x) + 2 - x\\
+	A(x) &= \frac{2-x}{1-x-x^2}
 \end{align*}
 \begin{align*}
-		p(x) &= 1-x-x^2 = (1-\rho_1x)(1-\rho_2x)\\
-		p^R(y) &= y^2-y-1 = (y-\rho_1)(y-\rho_2)\\
-		&= (y-\frac{1+\sqrt{5}}{2})(y-\frac{1-\sqrt{5}}{2})\\
-		p(x) &= (1-\frac{1+\sqrt{5}}{2}x)(1-\frac{1-\sqrt{5}}{2}x)\\
-		A(x) &= \frac{2-x}{(1-\frac{1+\sqrt{5}}{2}x)(1-\frac{1-\sqrt{5}}{2}x)}
-		=\frac{B}{(1-\frac{1+\sqrt{5}}{2}x)}+\frac{C}{(1-\frac{1-\sqrt{5}}{2}x)}\\
-		2-x &= B(1-\frac{1-\sqrt{5}}{2}x) + C(1-\frac{1+\sqrt{5}}{2}x)\\
-		2&= B+C, \text{ where } x=0\\
-		2-1 &= B(1-\frac{1-\sqrt{5}}{2}) + C(1-\frac{1+\sqrt{5}}{2}), \text{ where } x=1\\
-		1 &= B(\frac{2-(1-\sqrt{5})}{2}) + C(\frac{2-(1+\sqrt{5})}{2})\\
-		2 &= B(1+\sqrt{5}) + C(1-\sqrt{5})\\
-		2 &= B+\sqrt{5}B + C-\sqrt{5}C\\
-		2 &= B+C + \sqrt{5}(B-C)\\
-		2 &= (2) + \sqrt{5}(B-(2-B)), \text{ where } 2=A+B \text{ and } C=2-B\\
-		0 &= \sqrt{5}(2B-2)\\
-		0 &= 2B-2\\
-		B &= 1; C =1\\
-		A(x) &=  \frac{1}{(1-\frac{1+\sqrt{5}}{2}x)}+\frac{1}{(1-\frac{1-\sqrt{5}}{2}x)}\\
+	p(x) &= 1-x-x^2 = (1-\rho_1x)(1-\rho_2x)\\
+	p^R(y) &= y^2-y-1 = (y-\rho_1)(y-\rho_2)\\
+	&= (y-\frac{1+\sqrt{5}}{2})(y-\frac{1-\sqrt{5}}{2})\\
+	p(x) &= (1-\frac{1+\sqrt{5}}{2}x)(1-\frac{1-\sqrt{5}}{2}x)\\
+	A(x) &= \frac{2-x}{(1-\frac{1+\sqrt{5}}{2}x)(1-\frac{1-\sqrt{5}}{2}x)}
+	=\frac{B}{(1-\frac{1+\sqrt{5}}{2}x)}+\frac{C}{(1-\frac{1-\sqrt{5}}{2}x)}\\
+	2-x &= B(1-\frac{1-\sqrt{5}}{2}x) + C(1-\frac{1+\sqrt{5}}{2}x)\\
+	2&= B+C, \text{ where } x=0\\
+	2-1 &= B(1-\frac{1-\sqrt{5}}{2}) + C(1-\frac{1+\sqrt{5}}{2}), \text{ where } x=1\\
+	1 &= B(\frac{2-(1-\sqrt{5})}{2}) + C(\frac{2-(1+\sqrt{5})}{2})\\
+	2 &= B(1+\sqrt{5}) + C(1-\sqrt{5})\\
+	2 &= B+\sqrt{5}B + C-\sqrt{5}C\\
+	2 &= B+C + \sqrt{5}(B-C)\\
+	2 &= (2) + \sqrt{5}(B-(2-B)), \text{ where } 2=A+B \text{ and } C=2-B\\
+	0 &= \sqrt{5}(2B-2)\\
+	0 &= 2B-2\\
+	B &= 1; C =1\\
+	A(x) &=  \frac{1}{(1-\frac{1+\sqrt{5}}{2}x)}+\frac{1}{(1-\frac{1-\sqrt{5}}{2}x)}\\
 \end{align*}
 \begin{align*}
-		A(x) = \sum_{n\ge 0} L_n x^n 
-		&= \sum_{n\ge 0} (\frac{1+\sqrt{5}}{2})^nx^n + \sum_{n\ge 0} (\frac{1-\sqrt{5}}{2})^nx^n\\
-		L_n &= (\frac{1+\sqrt{5}}{2})^n + (\frac{1-\sqrt{5}}{2})^n, \text{ for } n\ge 0
-	\end{align*}
-	
+	A(x) = \sum_{n\ge 0} L_n x^n 
+	&= \sum_{n\ge 0} (\frac{1+\sqrt{5}}{2})^nx^n + \sum_{n\ge 0} (\frac{1-\sqrt{5}}{2})^nx^n\\
+	L_n &= (\frac{1+\sqrt{5}}{2})^n + (\frac{1-\sqrt{5}}{2})^n, \text{ for } n\ge 0
+\end{align*}
