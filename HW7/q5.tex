@@ -1,4 +1,27 @@
 Find a closed formula (giving \textit{exact} values) for the sequence $g_n = g_{n-1} + g_{n-2} + n$ for $n\ge2$ with $g_0=1$ and $g_1=2$.
 \begin{framed}
-	ToDo:
+	\begin{align*}
+	e^{\rho x} &= \sum_{n\ge0}{\rho}^n\frac{x^n}{n!}\\
+		G(x) &= \sum_{n\ge0}g_nx^n\\
+		\\
+		g_n &= g_{n-1} + g_{n-2} + n + [n=0]\\
+		\sum_{n\ge0}g_nx_n&= \sum_{n\ge0}g_{n-1}x^n +  \sum_{n\ge0}g_{n-2}x^n + \sum_{n\ge0}nx^n + \sum_{n\ge0}[n=0]x^n\\
+		G(x) &= xG(x) + x^2G(x) + \frac{x}{(1-x)^2} + 1\\
+		&=  \frac{\frac{x}{(1-x)^2} + 1}{1-x-x^2}\\
+		&= \frac{4+2x}{1-x-x^2} - \frac{2}{1-x} - \frac{1}{(1-x)^2}\\
+		\\
+		\frac{4+2x}{1-x-x^2} &= \frac{a}{1-\rho x} + \frac{b}{1-\rho' x}\\
+		\rho &= \frac{1+\sqrt5}{2} \text{ and } \rho' = \frac{1-\sqrt5}{2}\\
+		4+2x &= a(1-\rho' x) + b(a-\rho x)\\
+		4 &= a + b\\
+		2 &= -a\rho' - b\rho \\
+			a &= \frac{10+ 4\sqrt5}{5} \text{ and } b = \frac{10 - 4\sqrt5}{5}\\
+		\\
+		G(x) &= (\frac{10+ 4\sqrt5}{5})(\frac{1}{1-\rho x}) + (\frac{10 - 4\sqrt5}{5})(\frac{1}{1-\rho' x}) - \frac{2}{1-x} - \frac{1}{(1-x)^2}\\
+		&= \frac{10+ 4\sqrt5}{5}\sum_{n\ge0}\rho^nx^n + \frac{10 - 4\sqrt5}{5}\sum_{n\ge0}\rho'^nx^n - 2\sum_{n\ge0}x^n - \sum_{n\ge0}(n+1)x^n\\
+		g_n &= \frac{10+ 4\sqrt5}{5}\rho^n +  \frac{10 - 4\sqrt5}{5}\rho'^n -2-(n+1)\\
+		g_n &= (\frac{10+ 4\sqrt5}{5})(\frac{1+\sqrt5}{2})^n +  (\frac{10 - 4\sqrt5}{5})(\frac{1-\sqrt5}{2})^n -n-3\\
+\\
+\end{align*}
+
 \end{framed}
