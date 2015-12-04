@@ -1,0 +1,19 @@
+\begin{align*}
+	e^{\rho x} &= \sum_{n\ge0}{\rho}^n\frac{x^n}{n!}\\
+	L(x) &=  \sum_{n\ge0}L_n\frac{x^n}{n!}\\
+	L'(x) &= \sum_{n\ge0}L_{n+1}\frac{x^n}{n!}\\
+	L''(x) &= \sum_{n\ge0}L_{n+2}\frac{x^n}{n!}\\
+  \\
+	L_{n+2} &= L_{n+1} + L_{n}\\
+	\sum_{n\ge0}L_{n+2}\frac{x^n}{n!} &= \sum_{n\ge0}L_{n+1}\frac{x^n}{n!} + \sum_{n\ge0}L_{n}\frac{x^n}{n!}\\
+	L''(x) &= L'(x) + L(x)\\
+	L(x) &= c_1e^{\frac{-1}{2}(\sqrt5-1)x} + c_2e^{\frac{1}{2}(\sqrt5+1)x}\\
+  \\
+	\text{when x=0: 	}2&=c_1 + c_2\\
+	\text{when x=1: 	}1&=c_1e^{\frac{-1}{2}(\sqrt5-1)} + c_2e^{\frac{1}{2}(\sqrt5+1)}\\
+	c_1 &= 1 \text{ and } c_2=1\\
+  \\	
+	L(x) &= e^{\frac{-1}{2}(\sqrt5-1)x} + e^{\frac{1}{2}(\sqrt5+1)x}\\
+	&=\sum_{n\ge0}(\frac{1-\sqrt{5}}{2})^n\frac{x^n}{n!} + \sum_{n\ge0}(\frac{1+\sqrt{5}}{2})^n\frac{x^n}{n!}\\
+	L_n &= (\frac{1-\sqrt{5}}{2})^n + (\frac{1+\sqrt{5}}{2})^n
+\end{align*}
